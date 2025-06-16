@@ -1,0 +1,6 @@
+student_id,student_name,course_enrolled,enrollment_date,course_progress,is_active
+1001,Alice Smith,Data Science,2024-01-15,75.5,TRUE
+1002,Bob Johnson,Machine Learning,2024-02-20,50,TRUE
+1003,Carol Lee,Web Development,2024-03-10,85,FALSE
+1004,Dave Wilson,Cybersecurity,2024-04-05,40,TRUE
+1005,Eva Davis,Data Science,2024-05-22,60,TRUE

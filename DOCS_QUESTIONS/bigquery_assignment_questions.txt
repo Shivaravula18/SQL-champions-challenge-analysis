@@ -1,0 +1,112 @@
+
+Day 1 - Assignment
+
+Question 1:
+Create a new project - “project-c” in BigQuery.
+
+Question 2:
+Create 2 different datasets in project-c. Dataset names should be learning_sql and practice_sql.
+
+Question 3:
+In learning_sql dataset, create a table named learning_table_1 with the following fields:
+- student_id INTEGER,
+- student_name STRING,
+- course_enrolled STRING,
+- enrollment_date DATE,
+- course_progress FLOAT,
+- is_active BOOLEAN
+
+(CSV link: https://docs.google.com/spreadsheets/d/1jVq_cJHjUR0_VwMZVNCzIRm42c6YvfVk9ETcZbty5UE/edit?usp=sharing)
+
+Day 2 - Assignment
+
+Create a Table with Constraints:
+Create a table named students_info with the following structure and constraints:
+- student_id should be the primary key.
+- student_name should not be NULL.
+- course_enrolled should not allow NULL values.
+- course_progress (float, no constraints)
+- is_active (boolean, no constraints)
+
+Add a New Column:
+Add a new column email of type STRING to the students_info table.
+
+Modify a Column:
+Modify the course_progress column to restrict its values to only two decimal places.
+
+Add a UNIQUE Constraint:
+Add a UNIQUE constraint on the email column to ensure that no two students can have the same email address.
+
+Add a CHECK Constraint:
+Add a CHECK constraint to ensure that the course_progress is always between 0 and 100.
+
+Drop a Column:
+Drop the email column from the students_info table.
+
+Rename a Column:
+Rename the student_name column to full_name.
+
+Add a Default Value:
+Add a default value of TRUE for the is_active column to indicate that students are active by default.
+
+Drop a Constraint:
+Drop the check_course_progress constraint from the students_info table.
+
+Truncate the Table:
+Remove all data from the students_info table without deleting the table.
+
+Day 3 - Assignment
+
+Dataset: Champions Challenge Dataset
+(Four tables: users_basic_details, day_wise_user_learning_activity, lesson_details, challenge_rewards)
+
+Question 1:
+For each user and lesson, calculate their cumulative lesson completion percentage over time.
+
+Question 2:
+For each lesson, calculate the average overall_completion_percentage and rank the lessons based on this average.
+Expected Output: | lesson_id | average_completion_percentage | rank_of_lesson |
+
+Question 3:
+For each user and lesson, identify the lesson start date and lesson end date/latest progress date.
+Expected Output: | user_id | lesson_id | lesson_start_date | lesson_end_or_last_progress_date |
+
+Question 4:
+Pivot the overall_completion_percentage by lesson_id for each user. Show a row for each user_id and columns for each lesson_id (only lessons 1–5).
+Expected Output: | user_id | lesson_1_completion_percentage | lesson_2_completion_percentage | ... |
+
+Question 5:
+Rank lesson_id-wise completed users based on their completion datetime.
+Expected Output: | lesson_id | user_id | rank |
+
+Question 6:
+Determine the sequence in which each user completed their lessons.
+Expected Output: | user_id | lesson_id | order_of_completion |
+
+Question 7:
+For each lesson_id and user id, get the user who completed before him and the user who completed after him.
+Expected Output: | lesson_id | user_id | rank_of_user | previous_user_who_completed | next_user_who_completed |
+
+Question 8:
+For each lesson, get the user who is the 4th person to complete the lesson.
+Expected Output: | lesson_id | fourth_person_who_completed |
+
+Day 6 - Assignment
+
+Question 1:
+Write a query to list all the tables in the dataset my_project.my_dataset.
+
+Question 2:
+Write a query to get the column names, data types, and whether they are nullable, for the table my_table in my_dataset.
+
+Question 3:
+Write a query to list the tables that have been queried the most, based on the number of query jobs run in the dataset my_project.my_dataset.
+
+Question 4:
+Write a query to find all tables in your dataset my_dataset that have zero rows.
+
+Question 5:
+Write a query to list all views in the dataset my_dataset along with the creation time and view definition.
+
+Question 6:
+Write a query to list all the schemas in the project my_project.
