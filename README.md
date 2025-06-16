@@ -60,8 +60,4 @@ This project contains SQL-based assignments organized by days and objectives usi
 3. **Review Questions**  
    Use the PDF file from `docs/` to understand and track progress.
 
----
 
-## 📬 Contact
-
-If you have questions or need help with queries, feel free to reach out to your instructor or TA.
